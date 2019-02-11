@@ -5,6 +5,13 @@
 #ifndef DMITIGR_THE_CPP_LIBRARY_THE_CLASS_CPP
 #define DMITIGR_THE_CPP_LIBRARY_THE_CLASS_CPP
 
+#ifdef _WIN32
+#ifndef NOMINMAX
+#define NOMINMAX
+#define DMITIGR_THE_CPP_LIBRARY_NOMINMAX
+#endif
+#endif
+
 #include "dmitigr/internal/debug.hpp"
 #include "dmitigr/the_cpp_library/header_only.hpp"
 #include "dmitigr/the_cpp_library/the_class.hpp"
@@ -35,5 +42,10 @@ DMITIGR_THE_CPP_LIBRARY_API std::unique_ptr<The_class> The_class::make()
 }
 
 } // namespace dmitigr::the_cpp_library
+
+#ifdef DMITIGR_THE_CPP_LIBRARY_NOMINMAX
+#undef DMITIGR_THE_CPP_LIBRARY_NOMINMAX
+#undef NOMINMAX
+#endif
 
 #endif  // DMITIGR_THE_CPP_LIBRARY_THE_CLASS_CPP
