@@ -22,11 +22,31 @@ public:
    */
   virtual ~The_class() = default;
 
+  /// @name Constructors
+  /// @{
+
   /**
    * @brief Constructs the object ...
    */
   static DMITIGR_THE_CPP_LIBRARY_API std::unique_ptr<The_class> make();
 
+  /// @}
+
+  /// @name Observers
+  /// @{
+  /// @}
+
+  // ---------------------------------------------------------------------------
+
+  /// @name Modifiers
+  /// @{
+  /// @}
+
+  // ---------------------------------------------------------------------------
+
+  /// @name Conversions
+  /// @{
+  /// @}
 private:
   friend class ic::iThe_class;
 
