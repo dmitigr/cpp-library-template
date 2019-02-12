@@ -11,13 +11,13 @@ Any [feedback][dmitigr_mailbox] (*especially results of testing*) is highly appr
 Features
 ========
 
-Describe cool features here.
+Not implemented yet. Work in progress.
 
 Example
 =======
 
 ```cpp
-// Provide cool example here.
+// Example will be provided soon.
 ```
 
 Download
