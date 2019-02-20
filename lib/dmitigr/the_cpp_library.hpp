@@ -23,10 +23,6 @@
 #ifndef DMITIGR_THE_CPP_LIBRARY_HPP
 #define DMITIGR_THE_CPP_LIBRARY_HPP
 
-#include "dmitigr/the_cpp_library/dll.hpp"
-#include "dmitigr/the_cpp_library/header_only_footer.hpp"
-#include "dmitigr/the_cpp_library/header_only_header.hpp"
 #include "dmitigr/the_cpp_library/the_class.hpp"
-#include "dmitigr/the_cpp_library/types_fwd.hpp"
 
 #endif  // DMITIGR_THE_CPP_LIBRARY_HPP

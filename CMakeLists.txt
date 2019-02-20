@@ -97,8 +97,8 @@ set(dmitigr_the_cpp_library_root_headers
   )
 
 set(dmitigr_the_cpp_library_header_only_headers
-  lib/dmitigr/the_cpp_library/header_only_footer.hpp
-  lib/dmitigr/the_cpp_library/header_only_header.hpp
+  lib/dmitigr/the_cpp_library/implementation_footer.hpp
+  lib/dmitigr/the_cpp_library/implementation_header.hpp
   )
 
 set(dmitigr_the_cpp_library_headers
