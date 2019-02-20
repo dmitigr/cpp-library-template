@@ -97,7 +97,8 @@ set(dmitigr_the_cpp_library_root_headers
   )
 
 set(dmitigr_the_cpp_library_header_only_headers
-  lib/dmitigr/the_cpp_library/header_only.hpp
+  lib/dmitigr/the_cpp_library/header_only_footer.hpp
+  lib/dmitigr/the_cpp_library/header_only_header.hpp
   )
 
 set(dmitigr_the_cpp_library_headers
@@ -106,16 +107,27 @@ set(dmitigr_the_cpp_library_headers
   lib/dmitigr/the_cpp_library/types_fwd.hpp
   )
 
-set(dmitigr_the_cpp_library_transunits
+set(dmitigr_the_cpp_library_implementations
   lib/dmitigr/the_cpp_library/the_class.cpp
+  )
+
+set(dmitigr_the_cpp_library_transunits
+  lib/dmitigr/the_cpp_library/tu.cpp
   )
 
 set(dmitigr_the_cpp_library_sources
   ${dmitigr_the_cpp_library_root_headers}
   ${dmitigr_the_cpp_library_header_only_headers}
   ${dmitigr_the_cpp_library_headers}
+  ${dmitigr_the_cpp_library_implementations}
   ${dmitigr_the_cpp_library_transunits}
   )
+
+set_source_files_properties(
+  ${dmitigr_the_cpp_library_implementations}
+
+  PROPERTIES
+  HEADER_FILE_ONLY ON)
 
 # ------------------------------------------------------------------------------
 # Targets
@@ -201,7 +213,7 @@ else()
     EXPORT dmitigr_the_cpp_library_interface_export
     INCLUDES DESTINATION ${DMITIGR_THE_CPP_LIBRARY_INCLUDE_INSTALL_DIR})
 
-  install(FILES ${dmitigr_the_cpp_library_transunits}
+  install(FILES ${dmitigr_the_cpp_library_implementations}
     DESTINATION ${DMITIGR_THE_CPP_LIBRARY_INCLUDE_INSTALL_DIR}/dmitigr/the_cpp_library)
 endif()
 

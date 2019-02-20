@@ -4,8 +4,8 @@
 
 #ifndef DMITIGR_THE_CPP_LIBRARY_THE_CLASS_HPP
 #define DMITIGR_THE_CPP_LIBRARY_THE_CLASS_HPP
-
 #include "dmitigr/the_cpp_library/dll.hpp"
+
 #include "dmitigr/the_cpp_library/types_fwd.hpp"
 
 #include <memory>
@@ -48,7 +48,7 @@ public:
   /// @{
   /// @}
 private:
-  friend class ic::iThe_class;
+  friend iThe_class;
 
   The_class() = default;
 };
