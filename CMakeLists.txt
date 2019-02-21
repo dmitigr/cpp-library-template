@@ -112,7 +112,7 @@ set(dmitigr_the_cpp_library_implementations
   )
 
 set(dmitigr_the_cpp_library_transunits
-  lib/dmitigr/the_cpp_library/tu.cpp
+  lib/dmitigr/the_cpp_library.cpp
   )
 
 set(dmitigr_the_cpp_library_sources
