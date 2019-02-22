@@ -2,11 +2,10 @@
 // Copyright (C) Dmitry Igrishin
 // For conditions of distribution and use, see files LICENSE.txt or the_cpp_library.hpp
 
-#include "dmitigr/the_cpp_library/implementation_header.hpp"
-
+#include "dmitigr/the_cpp_library/debug.hpp"
 #include "dmitigr/the_cpp_library/the_class.hpp"
 
-#include "dmitigr/internal/debug.hpp"
+#include "dmitigr/the_cpp_library/implementation_header.hpp"
 
 namespace dmitigr::the_cpp_library {
 

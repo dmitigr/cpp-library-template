@@ -102,6 +102,7 @@ set(dmitigr_the_cpp_library_header_only_headers
   )
 
 set(dmitigr_the_cpp_library_headers
+  lib/dmitigr/the_cpp_library/debug.hpp
   lib/dmitigr/the_cpp_library/dll.hpp
   lib/dmitigr/the_cpp_library/the_class.hpp
   lib/dmitigr/the_cpp_library/types_fwd.hpp
