@@ -5,7 +5,7 @@
 #ifndef DMITIGR_THE_CPP_LIBRARY_DEBUG_HPP
 #define DMITIGR_THE_CPP_LIBRARY_DEBUG_HPP
 
-#include "dmitigr/internal/debug.hpp"
+#include <dmitigr/internal/debug.hpp>
 
 namespace dmitigr::the_cpp_library::detail {
 
