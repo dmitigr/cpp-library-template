@@ -12,5 +12,13 @@ namespace internal = dmitigr::internal;
 
 int main(int, char**)
 {
+  try {
+  } catch (const std::exception& e) {
+    std::cout << "error: " << e.what() << std::endl;
+    return 1;
+  } catch (...) {
+    std::cout << "unknown error" << std::endl;
+    return 2;
+  }
   return 0;
 }
