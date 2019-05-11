@@ -10,7 +10,7 @@ remove_definitions(-DDMITIGR_THE_CPP_LIBRARY_DLL_BUILDING)
 
 foreach(t unit1)
   add_executable(${t} ${t}.cpp)
-  target_link_libraries(${t} ${dmitigr_the_cpp_library_target} ${dmitigr_internal_library})
+  target_link_libraries(${t} ${dmitigr_the_cpp_library_target} ${dmitigr_common_library})
   dmitigr_target_compile_options(${t})
   add_test(NAME ${t} COMMAND ${t})
 endforeach()

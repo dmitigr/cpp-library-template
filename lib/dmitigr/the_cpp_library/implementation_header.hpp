@@ -3,7 +3,7 @@
 // For conditions of distribution and use, see files LICENSE.txt or the_cpp_library.hpp
 
 #ifndef DMITIGR_THE_CPP_LIBRARY_INLINE
-  #ifdef DMITIGR_THE_CPP_LIBRARY_HEADER_ONLY
+  #if defined(DMITIGR_THE_CPP_LIBRARY_HEADER_ONLY) && !defined(DMITIGR_THE_CPP_LIBRARY_HEADER_ONLY)
     #define DMITIGR_THE_CPP_LIBRARY_INLINE inline
   #else
     #define DMITIGR_THE_CPP_LIBRARY_INLINE

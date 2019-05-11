@@ -8,7 +8,6 @@
 #include <iostream>
 
 namespace the_cpp_library = dmitigr::the_cpp_library;
-namespace internal = dmitigr::internal;
 
 int main(int, char**)
 {

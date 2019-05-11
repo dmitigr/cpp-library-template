@@ -17,5 +17,5 @@
 #    misrepresented as being the original software.
 # 3. This notice may not be removed or altered from any source distribution.
 
-set(lib dmitigr_internal)
+set(lib dmitigr_common)
 include(dmitigr_package_finder)

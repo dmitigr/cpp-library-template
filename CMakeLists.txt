@@ -25,7 +25,7 @@ add_definitions(-DDMITIGR_THE_CPP_LIBRARY_VERSION_PART2=${dmitigr_the_cpp_librar
 
 option(BUILD_SHARED_LIBS "Build shared library?" ON)
 option(DMITIGR_THE_CPP_LIBRARY_HEADER_ONLY "Header-only library?" OFF)
-option(DMITIGR_THE_CPP_LIBRARY_BUILD_TESTS "Build test?" ON)
+option(DMITIGR_THE_CPP_LIBRARY_BUILD_TESTS "Build tests?" ON)
 
 if(NOT DMITIGR_THE_CPP_LIBRARY_HEADER_ONLY)
   if(BUILD_SHARED_LIBS)
@@ -102,7 +102,6 @@ set(dmitigr_the_cpp_library_header_only_headers
   )
 
 set(dmitigr_the_cpp_library_headers
-  lib/dmitigr/the_cpp_library/debug.hpp
   lib/dmitigr/the_cpp_library/dll.hpp
   lib/dmitigr/the_cpp_library/the_class.hpp
   lib/dmitigr/the_cpp_library/types_fwd.hpp
@@ -173,18 +172,18 @@ endif()
 # ------------------------------------------------------------------------------
 
 #
-# dmitigr_internal
+# dmitigr_common
 #
 
-find_package(Internal REQUIRED)
-message("Using ${dmitigr_internal_library} library")
+find_package(Common REQUIRED)
+message("Using ${dmitigr_common_library} library")
 
 # --------------------------------------
 
 if(NOT DMITIGR_THE_CPP_LIBRARY_HEADER_ONLY)
-  target_link_libraries(${dmitigr_the_cpp_library_target} PRIVATE ${dmitigr_internal_library})
+  target_link_libraries(${dmitigr_the_cpp_library_target} PRIVATE ${dmitigr_common_library})
 else()
-  target_link_libraries(dmitigr_the_cpp_library_interface INTERFACE ${dmitigr_internal_library})
+  target_link_libraries(dmitigr_the_cpp_library_interface INTERFACE ${dmitigr_common_library})
 endif()
 
 # ------------------------------------------------------------------------------

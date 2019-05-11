@@ -33,7 +33,7 @@ Dependencies
 
 - [CMake] build system version 3.13+;
 - C++17 compiler ([GCC] 7.3+ or [Microsoft Visual C++][Visual_Studio] 15.7+);
-- [dmitigr_internal] library.
+- [dmitigr_common] library.
 
 Build time settings
 -------------------
@@ -67,9 +67,9 @@ Details:
 Installation in common
 ----------------------
 
-Dmitigr The_cpp_library is depends on [dmitigr_internal].
+Dmitigr The_cpp_library is depends on [dmitigr_common].
 
-**WARNING** It's highly recommended to update the [dmitigr_internal] library (just pull and reinstall)
+**WARNING** It's highly recommended to update the [dmitigr_common] library (just pull and reinstall)
 before every build of the Dmitigr The_cpp_library library!
 
 Installation on Linux
@@ -161,7 +161,7 @@ Copyright (C) Dmitry Igrishin
 [dmitigr_mailbox]: mailto:dmitigr@gmail.com
 [dmitigr_paypal]: https://paypal.me/dmitigr
 [dmitigr_github]: https://github.com/dmitigr/the-cpp-library.git
-[dmitigr_internal]: https://github.com/dmitigr/internal.git
+[dmitigr_common]: https://github.com/dmitigr/common.git
 
 [cmake_find_package]: https://cmake.org/cmake/help/latest/command/find_package.html
 

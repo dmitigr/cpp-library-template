@@ -2,18 +2,21 @@
 // Copyright (C) Dmitry Igrishin
 // For conditions of distribution and use, see files LICENSE.txt or the_cpp_library.hpp
 
-#include "dmitigr/the_cpp_library/debug.hpp"
 #include "dmitigr/the_cpp_library/the_class.hpp"
-
 #include "dmitigr/the_cpp_library/implementation_header.hpp"
+
+#include <dmitigr/common/debug.hpp>
 
 namespace dmitigr::the_cpp_library {
 
+/**
+ * @brief The_class implementation.
+ */
 class iThe_class final : public The_class {
 public:
   explicit iThe_class()
   {
-    DMITIGR_INTERNAL_ASSERT(is_invariant_ok());
+    DMITIGR_ASSERT(is_invariant_ok());
   }
 
 private:
